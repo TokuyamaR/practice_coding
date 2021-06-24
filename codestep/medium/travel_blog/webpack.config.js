@@ -8,14 +8,16 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   devtool: "source-map",
   //  エントリポイント
-  entry: "./src/javascripts/index.js",
+  entry: {
+    index: "./src/javascripts/index.js",
+  },
   // アウトプット先
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "./javascripts/[name]-[contenthash].js",
+    filename: "javascripts/[name]-[contenthash].js",
+    publicPath: "./",
   },
   // モジュール設定
   module: {
@@ -23,6 +25,7 @@ module.exports = {
       {
         // js section
         test: /\.(js|jsx)/,
+        exclude: /node_modules/,
         use: [
           {
             loader: "babel-loader",
@@ -42,7 +45,7 @@ module.exports = {
       },
       {
         // css section
-        test: /\.(css|sass|scss)/,
+        test: /\.(css|scss|sass)/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader, // jsファイルに読み込まれたcssを別ファイルに切り離す
@@ -60,22 +63,16 @@ module.exports = {
       },
       {
         // image section
-        test: /\.(png|jpe?g)$/,
+        test: /\.(png|jpe?g)/,
         type: "asset/resource",
         generator: {
           filename: "images/[name]-[contenthash][ext]",
-          publicPath: "/",
         },
         use: [
           {
             loader: "image-webpack-loader",
           },
         ],
-      },
-      {
-        // html section
-        test: /\.html/,
-        use: [{ loader: "html-loader" }],
       },
     ],
   },
@@ -90,8 +87,4 @@ module.exports = {
     // 自動生成されるファイル以外の不要ファイルを削除(outputで指定したディレクトリ配下を対象とする)
     new CleanWebpackPlugin(),
   ],
-  // 監視対象に関するオプションを指定
-  watchOptions: {
-    ignored: /node-modules/, // node-moduleを除外
-  },
 };
