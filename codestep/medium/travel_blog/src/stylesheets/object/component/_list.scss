@@ -1,0 +1,20 @@
+.c-list {
+  &--3col {
+    display: flex;
+    flex-wrap: wrap;
+    &__list {
+      flex-basis: calc(100% / 3 - 10px);
+      &:not(:nth-child(3n)) {
+        margin-right: 15px;
+      }
+    }
+  }
+  &--1col {
+    &__list {
+      margin-top: 32px;
+      &:first-child {
+        margin-top: unset;
+      }
+    }
+  }
+}

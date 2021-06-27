@@ -1,0 +1,10 @@
+.c-nav {
+  align-items: center;
+  display: flex;
+  &__list {
+    margin-right: 64px;
+    a {
+      text-decoration: none;
+    }
+  }
+}

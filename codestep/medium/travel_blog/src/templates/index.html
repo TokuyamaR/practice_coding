@@ -1,16 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <title>Travel Blog</title>
   </head>
   <body>
-    <h1 class="red">Travel Blog</h1>
-    <img
-      src="<%= require('../images/umamusume_release.png') %>"
-      alt="サンプル画像"
-    />
+    <div class="l-wrap--header">
+      <div class="l-wrap__inner">
+        <header>
+          <div class="l-header">
+            <h1 class="l-logo">
+              <a href="#">
+                <img src="<%= require('../images/logo.svg') %>" alt="Travel Blog"/>
+              </a>
+            </h1>
+            <div class="l-nav">
+              <ul class="c-nav">
+                <li class="c-nav__list"><a href="#">NEW</a></li>
+                <li class="c-nav__list"><a href="#">COLUMN</a></li>
+                <li class="c-nav__list"><a href="#">SERIES</a></li>
+                <li class="c-nav__list"><a href="#">Q&A</a></li>
+                <li class="c-nav__list"><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div id="pickup">
+      <div class="l-wrap">
+        <div class="l-wrap__inner">
+          <ul class="c-list--3col">
+            <li class="c-list--3col__list">
+              <article>
+              <div class="c-block_col">
+                  <img src="<%= require('../images/pickup1.jpg') %>" alt="ピックアップ画像" class="u-w100"/>
+                  <p class="c-fs16">
+                    タイトルテキストタイトルテキストタイルテ
+                  </p>
+                  <a href="#">READ MORE</a>
+                </div>
+              </article>
+            </li>
+            <li class="c-list--3col__list">
+              <article>
+                <div class="c-block_col">
+                  <img src="<%= require('../images/pickup2.jpg') %>" alt="ピックアップ画像" class="u-w100" />
+                  <p class="c-fs16">
+                    タイトルテキストタイトルテキストタイトルテキストタイトルテキスルテキストタイトルテ
+                  </p>
+                  <a href="#">READ MORE</a>
+                </div>
+              </article>
+            </li>
+            <li class="c-list--3col__list">
+                <article>
+                  <div class="c-block_col">
+                    <img src="<%= require('../images/pickup3.jpg') %>" alt="ピックアップ画像" class="u-w100" />
+                    <p class="c-fs16">
+                      タイトルテキストタイトルテキストタイトルテキストタイトル
+                    </p>
+                    <a href="#"">READ MORE</a>
+                  </div>
+                </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="l-wrap">
+      <div class="l-wrap__inner">
+        <div class="l-content">
+          <div class="l-main">
+            <main>
+              <div class="c-container">
+                <ul class="c-list--1col">
+                  <li class="c-list--1col__list">
+                    <div class="c-block_col">
+                      <div class="c-block_col__head">
+                        <h2 class="c-block_col__head__title c-fs24">タイトルテキストタイトルテキストタイトルテキスト</h2>
+                        <ul class="c-row_line_list">
+                          <li class="c-row_line_list__lists">2020/01/01</li>
+                          <li class="c-row_line_list__lists">カテゴリ</li>
+                        </ul>
+                      </div>
+                      <a href="#">
+                        <img src="<%= require('../images/main1.jpg') %>" alt="メイン画像" class="u-w100"/>
+                      </a>
+                      <div class="c-block_col__foot">
+                        <p class="c-block_col__foot__text c-fs16">
+                          本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+                        </p>
+                        <a href="#">READ MORE</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="c-list--1col__list">
+                    <div class="c-block_col">
+                      <div class="c-block_col__head">
+                        <h2 class="c-fs24">タイトルテキストタイトルテキストタイトルテキスト</h2>
+                        <ul class="c-row_line_list">
+                          <li class="c-row_line_list__lists">2020/01/01</li>
+                          <li class="c-row_line_list__lists">カテゴリ</li>
+                        </ul>
+                      </div>
+                      <a href="#">
+                        <img src="<%= require('../images/main2.jpg') %>" alt="メイン画像" class="u-w100"/>
+                      </a>
+                      <div class="c-block_col__foot">
+                        <p class="c-block_col__foot__text c-fs16">
+                          本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+                        </p>
+                        <a href="#">READ MORE</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="c-list--1col__list">
+                    <div class="c-block_col">
+                      <div class="c-block_col__head">
+                        <p class="c-fs24">タイトルテキストタイトルテキストタイトルテキスト</p>
+                        <ul class="c-row_line_list">
+                          <li class="c-row_line_list__lists">2020/01/01</li>
+                          <li class="c-row_line_list__lists">カテゴリ</li>
+                        </ul>
+                      </div>
+                      <a href="#">
+                        <img src="<%= require('../images/main3.jpg') %>" alt="メイン画像" class="u-w100"/>
+                      </a>
+                      <div class="c-block_col__foot">
+                        <p class="c-block_col__foot__text c-fs16">
+                          本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+                        </p>
+                        <a href="#">READ MORE</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </main>
+          </div>
+          <div class="l-side">
+            <aside>
+              <section>
+                <div class="p-profile">
+                  <img src="<%= require('../images/author.jpg') %>" alt="プロフィール画像" class="p-profile__author_img">
+                  <p class="p-profile__name">Raido Tokuyama</p>
+                  <p>本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
+                </div>
+              </section>
+              <section>
+                <p class="c-title18">Ranking</p>
+                <ul class="c-list--1col">
+                  <li class="c-list--1col__list">
+                    <div class="c-block_col">
+                      <img src="<%= require('../images/ranking1.jpg') %>" alt="ランキング画像" class="u-w100"/>
+                      <p class="c-fs16">
+                        タイトルテキストタイトルテキストタイトルテキスト
+                      </p>
+                    </div>
+                  </li>
+                  <li class="c-list--1col__list">
+                    <div class="c-block_col">
+                      <img src="<%= require('../images/ranking2.jpg') %>" alt="ランキング画像" class="u-w100"/>
+                      <p class="c-fs16">
+                        タイトルテキストタイトルテキストタイトルテキスト
+                      </p>
+                    </div>
+                  </li>
+                  <li class="c-list--1col__list">
+                    <div class="c-block_col">
+                      <img src="<%= require('../images/ranking3.jpg') %>" alt="ランキング画像" class="u-w100"/>
+                      <p class="c-fs16">
+                        タイトルテキストタイトルテキストタイトルテキスト
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <p class="c-title18">Archive</p>
+                <ul class="c-list--1col">
+                  <li class="c-list--1col__lists--border">
+                    xxxx年xx月(xx)
+                  </li>
+                  <li class="c-list--1col__lists--border">
+                    xxxx年xx月(xx)
+                  </li>
+                  <li class="c-list--1col__lists--border">
+                    xxxx年xx月(xx)
+                  </li>
+                  <li class="c-list--1col__lists--border">
+                    xxxx年xx月(xx)
+                  </li>
+                  <li class="c-list--1col__lists--border">
+                    xxxx年xx月(xx)
+                  </li>
+                </ul>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l-wrap--footer">
+      <div class="l-wrap__inner">
+        <footer>
+          <div class="l-footer">
+            <div class="l-footer_nav_wrap">
+              <ul class="c-nav--footer">
+                <li class="c-nav--footer__list">
+                  <div class="c-block-col">
+                    <p class="c-title18">About</p>
+                    <p>
+                      テキストテキストテキストテキストテキストテキストテ
+                      キストテキストテキストテキスト テキストテキストテ
+                      キストテキストテキストテキストテキストテキストテキ
+                      ストテキスト テキストテキストテキストテキストテキ
+                      ストテキストテキストテキストテキストテキスト
+                    </p>
+                    <ul class="c-list--1col">
+                      <li class="c-list--1col--marker">プロフィール詳細</li>
+                      <li class="c-list--1col--marker">お仕事の依頼</li>
+                      <li class="c-list--1col--marker">お問い合わせ</li>
+                    </ul>
+                  </div>
+                  <div class="c-block-col">
+                    <p class="c-title18">Menu</p>
+                    <ul class="c-list--1col">
+                      <li class="c-list--1col__lists--border">
+                        NEW
+                      </li>
+                      <li class="c-list--1col__lists--border">
+                        CATEGORY
+                      </li>
+                      <li class="c-list--1col__lists--border">
+                        COLUMN
+                      </li>
+                      <li class="c-list--1col__lists--border">
+                        SERIES
+                      </li>
+                      <li class="c-list--1col__lists--border">
+                        Q&A
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="c-block-col">
+                    <p class="c-title18">Twitter</p>
+                    <div class="p-twitter_wrap"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

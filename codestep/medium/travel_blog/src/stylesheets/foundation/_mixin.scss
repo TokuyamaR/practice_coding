@@ -1,0 +1,4 @@
+@mixin fs($fontSize) {
+  font-size: #{$fontSize}px;
+  font-weight: bold;
+}

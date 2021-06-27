@@ -1,0 +1,13 @@
+.p-profile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__author_img {
+    border-radius: 50%;
+    width: 130px;
+  }
+  &__name {
+    @include fs(18);
+  }
+}

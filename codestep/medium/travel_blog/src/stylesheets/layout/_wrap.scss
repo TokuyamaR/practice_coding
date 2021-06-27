@@ -1,0 +1,12 @@
+.l-wrap {
+  &--header {
+    background-color: #fff;
+  }
+  &--footer {
+    background-color: #f7f7f7;
+  }
+  &__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
