@@ -1,0 +1,9 @@
+.c-title18 {
+  @include fs(20);
+
+  &--side {
+    @extend .c-title18;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}

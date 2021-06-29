@@ -7,8 +7,12 @@ body {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   &:hover {
     text-decoration: none;
   }
+}
+
+aside > section {
+  margin-bottom: 40px;
 }

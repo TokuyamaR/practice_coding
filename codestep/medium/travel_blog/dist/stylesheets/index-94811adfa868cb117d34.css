@@ -496,16 +496,33 @@ body {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
 }
 
+aside > section {
+  margin-bottom: 40px;
+}
+
 .l-content {
   display: flex;
-  margin-top: 60px;
+  margin: 60px 0;
   max-width: 1200px;
+}
+
+.l-footer {
+  margin: 0 auto;
+}
+.l-footer_nav_wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 64px 0;
+}
+.l-footer__copyright {
+  padding: 16px 0;
 }
 
 .l-logo {
@@ -519,11 +536,11 @@ a:hover {
 .l-nav {
   background-color: #333;
   color: #fff;
-  padding: 12px 0;
+  margin: 0 auto;
 }
 
 #pickup {
-  margin-top: 40px;
+  margin-top: 120px;
 }
 #pickup .c-block_col p {
   margin: 10px 0 15px 0;
@@ -535,6 +552,9 @@ a:hover {
 
 .l-wrap--header {
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .l-wrap--footer {
   background-color: #f7f7f7;
@@ -553,6 +573,12 @@ a:hover {
 }
 .c-block_col__foot__text {
   padding: 1rem 3rem 2rem;
+}
+.c-block_col__text--side {
+  margin-top: 8px;
+}
+.c-block_col__title--footer {
+  margin-bottom: 24px;
 }
 
 .c-container {
@@ -586,10 +612,26 @@ a:hover {
 .c-list--1col__list:first-child {
   margin-top: unset;
 }
+.c-list--1col__lists--border {
+  border-bottom: 1px solid #333;
+}
+.c-list--1col__lists--border:first-child {
+  border-top: 1px solid #333;
+}
+.c-list--1col__lists--side, .c-list--1col__lists--footer {
+  border-bottom: 1px solid #333;
+  padding: 16px;
+}
+.c-list--1col__lists--side:first-child, .c-list--1col__lists--footer:first-child {
+  border-top: 1px solid #333;
+}
 
 .c-nav {
   align-items: center;
   display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 16px 0;
 }
 .c-nav__list {
   margin-right: 64px;
@@ -597,12 +639,25 @@ a:hover {
 .c-nav__list a {
   text-decoration: none;
 }
+.c-nav--footer {
+  flex-basis: 30%;
+}
 
 .c-row_line_list {
   display: flex;
+  margin-bottom: 10px;
 }
 .c-row_line_list__lists {
   margin-right: 20px;
+}
+
+.c-title18, .c-title18--side {
+  font-size: 20px;
+  font-weight: bold;
+}
+.c-title18--side {
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 .p-profile {
@@ -613,13 +668,27 @@ a:hover {
 }
 .p-profile__author_img {
   border-radius: 50%;
+  margin-bottom: 32px;
   width: 130px;
 }
 .p-profile__name {
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 32px;
 }
 
 .u-w100 {
   width: 100%;
+}
+
+.u-wfull {
+  margin: 0 calc(50% - 50vw);
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-link__underline {
+  text-decoration: underline;
 }

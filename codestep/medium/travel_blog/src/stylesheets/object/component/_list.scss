@@ -16,5 +16,21 @@
         margin-top: unset;
       }
     }
+    &__lists {
+      &--border {
+        border-bottom: 1px solid #333;
+        &:first-child {
+          border-top: 1px solid #333;
+        }
+      }
+      &--side,
+      &--footer {
+        border-bottom: 1px solid #333;
+        padding: 16px;
+        &:first-child {
+          border-top: 1px solid #333;
+        }
+      }
+    }
   }
 }

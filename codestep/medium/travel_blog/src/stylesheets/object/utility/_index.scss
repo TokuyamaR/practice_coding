@@ -1,3 +1,17 @@
 .u-w100 {
   width: 100%;
 }
+
+.u-wfull {
+  margin: 0 calc(50% - 50vw);
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-link {
+  &__underline {
+    text-decoration: underline;
+  }
+}

@@ -1,10 +1,17 @@
+@import "../../foundation/variables";
 .c-nav {
   align-items: center;
   display: flex;
+  margin: 0 auto;
+  max-width: $pcContentsWidth;
+  padding: 16px 0;
   &__list {
     margin-right: 64px;
     a {
       text-decoration: none;
     }
+  }
+  &--footer {
+    flex-basis: 30%;
   }
 }
