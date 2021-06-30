@@ -1,0 +1,6 @@
+.l-side {
+  width: 320px;
+  @include media {
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.c-block_col {
+  a {
+    display: inline-block;
+    text-align: center;
+  }
+  &__head {
+    &__title {
+      margin: 10px 0 15px 0;
+    }
+  }
+  &__foot {
+    &__text {
+      padding: 1rem 3rem 2rem;
+    }
+  }
+  &__text {
+    &--side {
+      margin-top: 8px;
+    }
+  }
+  &__title {
+    &--footer {
+      margin-bottom: 24px;
+    }
+  }
+}

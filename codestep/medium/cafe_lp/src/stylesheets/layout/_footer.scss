@@ -1,0 +1,13 @@
+.l-footer {
+  margin: 0 auto;
+  &_nav_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 64px 0;
+  }
+  &__copyright {
+    padding: 16px 0;
+  }
+}

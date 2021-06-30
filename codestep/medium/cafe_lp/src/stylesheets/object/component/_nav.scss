@@ -1,0 +1,25 @@
+@import "../../foundation/variables";
+.c-nav {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: $pcContentsWidth;
+  overflow-x: auto;
+  padding: 16px;
+  &__list {
+    margin-right: 64px;
+    a {
+      text-decoration: none;
+    }
+  }
+  &--footer {
+    flex-basis: 30%;
+    @include media {
+      flex-basis: 100%;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: unset;
+      }
+    }
+  }
+}

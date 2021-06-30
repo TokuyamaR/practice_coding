@@ -1,0 +1,18 @@
+@import "../foundation/variables";
+
+.l-wrap {
+  &--header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  &--footer {
+    background-color: #f7f7f7;
+  }
+  &__inner {
+    max-width: $pcContentsWidth;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}

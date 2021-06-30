@@ -1,0 +1,6 @@
+.l-main {
+  width: calc(100% - 320px);
+  @include media {
+    width: 100%;
+  }
+}
