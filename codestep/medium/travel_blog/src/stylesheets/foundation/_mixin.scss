@@ -1,4 +1,11 @@
+@import "./variables";
 @mixin fs($fontSize) {
   font-size: #{$fontSize}px;
   font-weight: bold;
+}
+
+@mixin media($mediaWidth: $spBreakpointWidth) {
+  @media only screen and (max-width: $mediaWidth) {
+    @content;
+  }
 }

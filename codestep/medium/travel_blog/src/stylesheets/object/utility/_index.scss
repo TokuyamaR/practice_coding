@@ -1,3 +1,4 @@
+// width
 .u-w100 {
   width: 100%;
 }
@@ -6,12 +7,20 @@
   margin: 0 calc(50% - 50vw);
 }
 
+// position
 .u-center {
   text-align: center;
 }
 
+// link
 .u-link {
   &__underline {
     text-decoration: underline;
   }
+}
+
+// margin
+
+.u-mt32 {
+  margin-top: 32px;
 }

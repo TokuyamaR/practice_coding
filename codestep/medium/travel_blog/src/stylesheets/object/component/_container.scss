@@ -1,4 +1,8 @@
 .c-container {
   margin-right: 5.45%;
   width: 94.55%;
+  @include media {
+    margin-right: unset;
+    width: 100%;
+  }
 }
