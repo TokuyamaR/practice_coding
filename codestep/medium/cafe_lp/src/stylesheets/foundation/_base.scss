@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #333;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans",
     "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  line-height: 1.7;
 }
 
 a {

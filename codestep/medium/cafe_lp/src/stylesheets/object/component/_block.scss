@@ -1,26 +1,21 @@
-.c-block_col {
-  a {
-    display: inline-block;
-    text-align: center;
-  }
-  &__head {
+.c-block {
+  &_col {
+    padding: 0 3rem;
+    a {
+      display: inline-block;
+      text-align: center;
+    }
     &__title {
-      margin: 10px 0 15px 0;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+    &__content {
+      &--food {
+        margin-bottom: 4rem;
+      }
     }
   }
-  &__foot {
-    &__text {
-      padding: 1rem 3rem 2rem;
-    }
-  }
-  &__text {
-    &--side {
-      margin-top: 8px;
-    }
-  }
-  &__title {
-    &--footer {
-      margin-bottom: 24px;
-    }
+  &_row {
+    display: flex;
   }
 }

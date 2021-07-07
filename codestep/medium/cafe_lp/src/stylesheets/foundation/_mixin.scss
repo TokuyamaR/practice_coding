@@ -1,4 +1,5 @@
 @import "./variables";
+
 @mixin fs($fontSize) {
   font-size: #{$fontSize}px;
   font-weight: bold;
@@ -8,4 +9,17 @@
   @media only screen and (max-width: $mediaWidth) {
     @content;
   }
+}
+
+@mixin bgImage($imageName, $height: 300, $extension: "jpg") {
+  background-image: url("../images/#{$imageName}.#{$extension}");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: #{$height}px;
+  position: relative;
+}
+
+@mixin parallaxHeader() {
+  background-attachment: fixed;
 }

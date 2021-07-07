@@ -63,10 +63,11 @@ module.exports = {
       },
       {
         // image section
-        test: /\.(png|jpe?g|svg)/,
+        test: /\.(png|jpe?g|svg|ico)/,
         type: "asset/resource",
         generator: {
           filename: "images/[name]-[contenthash][ext]",
+          publicPath: "/dist/",
         },
         use: [
           {

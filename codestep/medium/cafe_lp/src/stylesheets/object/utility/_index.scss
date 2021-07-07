@@ -19,8 +19,38 @@
   }
 }
 
+// border
+
+.u-bb {
+  &--dotted {
+    border-bottom: 1px black dotted;
+  }
+  &--red {
+    border-bottom: 6px #e03131 solid;
+  }
+}
+
 // margin
+
+.u-mt16 {
+  margin-top: 16px;
+}
 
 .u-mt32 {
   margin-top: 32px;
+}
+
+.u-mr16 {
+  margin-right: 16px;
+}
+
+// padding
+
+.u-p0 {
+  padding: 0;
+}
+
+// display
+.u-ib {
+  display: inline-block;
 }

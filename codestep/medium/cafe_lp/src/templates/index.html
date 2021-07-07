@@ -4,272 +4,377 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
-    <title>Travel Blog</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="<%= require('../images/favicon.ico') %>"
+    />
+    <title>EBISU COFFEE</title>
   </head>
   <body>
     <div class="l-wrap--header">
-      <div class="l-wrap__inner">
-        <header>
-          <div class="l-header">
-            <h1 class="l-logo">
-              <a href="#">
-              </a>
-            </h1>
-            <div class="l-nav u-wfull">
-              <ul class="c-nav">
-                <li class="c-nav__list"><a href="#">NEW</a></li>
-                <li class="c-nav__list"><a href="#">COLUMN</a></li>
-                <li class="c-nav__list"><a href="#">SERIES</a>Q&A</li>
-                <li class="c-nav__list"><a href="#">CONTACT</a></li>
-              </ul>
-            </div>
+      <header>
+        <div class="l-header">
+          <div class="l-nav">
+            <ul class="c-nav">
+              <li class="c-nav__list"><a href="#menu">MENU</a></li>
+              <li class="c-nav__list"><a href="#about">ABOUT</a></li>
+              <li class="c-nav__list"><a href="#location">LOCATION</a></li>
+            </ul>
           </div>
-        </header>
-      </div>
-    </div>
-    <div id="pickup">
-      <div class="l-wrap">
-        <div class="l-wrap__inner">
-          <ul class="c-list--3col">
-            <li class="c-list--3col__list">
-              <article>
-              <div class="c-block_col">
-                  <p class="c-fs16">
-                    タイトルテキストタイトルテキストタイルテ
-                  </p>
-                  <div class="c-link--center">
-                    <a href="#" class="u-link__underline">READ MORE</a>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="c-list--3col__list">
-              <article>
-                <div class="c-block_col">
-                  <p class="c-fs16">
-                    タイトルテキストタイトルテキストタイトルテキストタイトルテキスルテキストタイトルテ
-                  </p>
-                  <div class="c-link--center">
-                    <a href="#" class="u-link__underline">READ MORE</a>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="c-list--3col__list">
-                <article>
-                  <div class="c-block_col">
-                    <p class="c-fs16">
-                      タイトルテキストタイトルテキストタイトルテキストタイトル
-                    </p>
-                    <div class="c-link--center">
-                      <a href="#"" class="u-link__underline">READ MORE</a>
-                    </div>
-                  </div>
-                </article>
-            </li>
-          </ul>
+          <h1 class="l-logo">
+            <img
+              src="<%=require('../images/logo.svg') %>"
+              alt="サイトタイトル"
+            />
+          </h1>
         </div>
-      </div>
+      </header>
     </div>
     <div class="l-wrap">
       <div class="l-wrap__inner">
         <div class="l-content">
           <div class="l-main">
             <main>
-              <div class="c-container">
-                <ul class="c-list--1col">
-                  <li class="c-list--1col__list--main">
-                    <div class="c-block_col">
-                      <div class="c-block_col__head">
-                        <h2 class="c-block_col__head__title c-fs24">タイトルテキストタイトルテキストタイトルテキスト</h2>
-                        <ul class="c-row_line_list">
-                          <li class="c-row_line_list__lists">2020/01/01</li>
-                          <li class="c-row_line_list__lists">カテゴリ</li>
-                        </ul>
-                      </div>
-                      <a href="#">
-                      </a>
-                      <div class="c-block_col__foot">
-                        <p class="c-block_col__foot__text c-fs16">
-                          本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
-                        </p>
-                        <div class="c-link--center">
-                          <a href="#" class="u-link__underline">READ MORE</a>
+              <section id="menu" class="c-section">
+                <div class="c-section__header--menu u-wfull">
+                  <h2 class="c-section__header__title">MENU</h2>
+                </div>
+                <div class="c-container">
+                  <ul class="c-list--2col">
+                    <li class="c-list--2col__list p-menu--2col">
+                      <div class="c-block_col">
+                        <div class="c-block_col__title">
+                          <p class="u-ib c-fs40 u-bb--red">COFFEE</p>
+                        </div>
+                        <div class="c-block_col__content">
+                          <ul class="c-list--1col">
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="c-list--1col__list--main">
-                    <div class="c-block_col">
-                      <div class="c-block_col__head">
-                        <h2 class="c-block_col__head__title c-fs24">タイトルテキストタイトルテキストタイトルテキスト</h2>
-                        <ul class="c-row_line_list">
-                          <li class="c-row_line_list__lists">2020/01/01</li>
-                          <li class="c-row_line_list__lists">カテゴリ</li>
-                        </ul>
-                      </div>
-                      <a href="#">
-                      </a>
-                      <div class="c-block_col__foot">
-                        <p class="c-block_col__foot__text c-fs16">
-                          本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
-                        </p>
-                        <div class="c-link--center">
-                          <a href="#" class="u-link__underline">READ MORE</a>
+                    </li>
+                    <li class="c-list--2col__list p-menu--2col">
+                      <div class="c-block_col">
+                        <div class="c-block_col__title">
+                          <p class="u-ib c-fs40 u-bb--red">FOOD</p>
+                        </div>
+                        <div class="c-block_col__content--food">
+                          <ul class="c-list--1col">
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="c-list--1col__list--main">
-                    <div class="c-block_col">
-                      <div class="c-block_col__head">
-                        <h2 class="c-block_col__head__title c-fs24">タイトルテキストタイトルテキストタイトルテキスト</h2>
-                        <ul class="c-row_line_list">
-                          <li class="c-row_line_list__lists">2020/01/01</li>
-                          <li class="c-row_line_list__lists">カテゴリ</li>
-                        </ul>
-                      </div>
-                      <a href="#">
-                      </a>
-                      <div class="c-block_col__foot">
-                        <p class="c-block_col__foot__text c-fs16">
-                          本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
-                        </p>
-                        <div class="c-link--center">
-                          <a href="#" class="u-link__underline">READ MORE</a>
+                      <div class="c-block_col">
+                        <div class="c-block_col__title">
+                          <p class="u-ib c-fs40 u-bb--red">OTHER</p>
+                        </div>
+                        <div class="c-block_col__content">
+                          <ul class="c-list--1col">
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                            <li class="c-list--1col__list">
+                              <div class="c-block_row">
+                                <p
+                                  class="
+                                    c-list--1col__list--left
+                                    u-mr16
+                                    u-bb--dotted
+                                  "
+                                >
+                                  XXXXXXXX
+                                </p>
+                                <p class="c-list--1col__list--right">¥500</p>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </main>
-          </div>
-          <div class="l-side">
-            <aside>
-              <section>
-                <div class="p-profile">
-                  <p class="p-profile__name">Raido Tokuyama</p>
-                  <p>本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト</p>
+                    </li>
+                  </ul>
                 </div>
               </section>
-              <section>
-                <p class="c-title18--side">Ranking</p>
-                <ul class="c-list--1col">
-                  <li class="c-list--1col__list">
-                    <div class="c-block_col">
-                      <p class="c-block_col__text--side c-fs16">
-                        タイトルテキストタイトルテキストタイトルテキスト
-                      </p>
-                    </div>
-                  </li>
-                  <li class="c-list--1col__list">
-                    <div class="c-block_col">
-                      <p class="c-block_col__text--side c-fs16">
-                        タイトルテキストタイトルテキストタイトルテキスト
-                      </p>
-                    </div>
-                  </li>
-                  <li class="c-list--1col__list">
-                    <div class="c-block_col">
-                      <p class="c-block_col__text--side c-fs16">
-                        タイトルテキストタイトルテキストタイトルテキスト
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+              <section id="about" class="c-section">
+                <div class="c-section__header--about u-wfull">
+                  <h2 class="c-section__header__title">ABOUT</h2>
+                </div>
+                <div class="c-container">
+                  <ul class="c-list--1col">
+                    <li class="c-list--1col__list">
+                      <div class="c-block_col">
+                        <div class="c-block_col__title">
+                          <p class="u-ib c-fs40 u-bb--red">COFFEE</p>
+                        </div>
+                        <div class="c-block_col__content">
+                          <ul class="c-list--2col">
+                            <li class="c-list--2col__list">
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            </li>
+                            <li class="c-list--2col__list">
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            </li>
+                            <li class="c-list--2col__list">
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                              サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </section>
-              <section>
-                <p class="c-title18--side">Archive</p>
-                <ul class="c-list--1col">
-                  <li class="c-list--1col__lists--side">
-                    <a href="#">XXXX年XX月(XX)</a>
-                  </li>
-                  <li class="c-list--1col__lists--side">
-                    <a href="#">XXXX年XX月(XX)</a>
-                  </li>
-                  <li class="c-list--1col__lists--side">
-                    <a href="#">XXXX年XX月(XX)</a>
-                  </li>
-                  <li class="c-list--1col__lists--side">
-                    <a href="#">XXXX年XX月(XX)</a>
-                  </li>
-                  <li class="c-list--1col__lists--side">
-                    <a href="#">XXXX年XX月(XX)</a>
-                  </li>
-                </ul>
+              <section id="location" class="c-section">
+                <div class="c-section__header--location u-wfull">
+                  <h2 class="c-section__header__title">LOCATION</h2>
+                </div>
+                <div class="c-container u-p0">
+                  <ul class="c-list--1col">
+                    <li class="c-list--1col__list">
+                      <div class="c-block_col__title">
+                        <p class="u-ib c-fs40 u-bb--red">OUR STORE</p>
+                      </div>
+                      <div class="c-block_col__content p-location">
+                        <div>
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.273038719021!2d139.70825616466138!3d35.64564402784395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4046e3f71d%3A0x85ab1d92ef294edf!2z5oG15q-U5a-_6aeF!5e0!3m2!1sja!2sjp!4v1625530082396!5m2!1sja!2sjp"
+                            width="100%"
+                            height="400"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                          ></iframe>
+                        </div>
+                        <div class="p-location__address">
+                          <p class="p-location__address__text">
+                            X-XX-XX, Ebisuminami, Shibuya-ku, Tokyo 150-0022
+                            <br />
+                            東京都渋谷区恵比寿南X-XX-XX
+                          </p>
+                          <p class="p-location__address__text">
+                            Open 7 days a Week
+                            <br />
+                            9:00am to 10:00pm
+                          </p>
+                          <p class="p-location__address__text">
+                            Tel : XX-XXXX-XXXX
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </section>
-            </aside>
+            </main>
           </div>
         </div>
       </div>
     </div>
     <div class="l-wrap--footer">
-      <div class="l-wrap__inner">
-        <footer>
-          <div class="l-footer">
-            <div class="l-footer_nav_wrap">
-              <ul class="c-nav--footer">
-                <li class="c-nav--footer__list">
-                  <div class="c-block_col">
-                    <h3 class="c-block_col__title--footer c-title18">About</h3>
-                    <p>
-                      テキストテキストテキストテキストテキストテキストテ
-                      キストテキストテキストテキスト テキストテキストテ
-                      キストテキストテキストテキストテキストテキストテキ
-                      ストテキスト テキストテキストテキストテキストテキ
-                      ストテキストテキストテキストテキストテキスト
-                    </p>
-                    <ul class="c-list--1col u-mt32">
-                      <li class="c-list--1col__lists--marker"><a href="#">プロフィール詳細</a></li>
-                      <li class="c-list--1col__lists--marker"><a href="#">お仕事の依頼</a></li>
-                      <li class="c-list--1col__lists--marker"><a href="#">お問い合わせ</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-              <ul class="c-nav--footer">
-                <li class="c-nav--footer__list">
-                  <div class="c-block_col">
-                    <h3 class="c-block_col__title--footer c-title18">Menu</h3>
-                    <ul class="c-list--1col">
-                      <li class="c-list--1col__lists--footer">
-                        <a href="#">NEW</a>
-                      </li>
-                      <li class="c-list--1col__lists--footer">
-                        <a href="#">CATEGORY</a>
-                      </li>
-                      <li class="c-list--1col__lists--footer">
-                        <a href="#">COLUMN</a>
-                      </li>
-                      <li class="c-list--1col__lists--footer">
-                        <a href="#">SERIES</a>
-                      </li>
-                      <li class="c-list--1col__lists--footer">
-                        <a href="#">Q&A</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-              <ul class="c-nav--footer">
-                <li class="c-nav--footer__list">
-                  <div class="c-block_col">
-                    <h3 class="c-block_col__title--footer c-title18">Twitter</h3>
-                    <div class="p-twitter_wrap">
-                      <a class="twitter-timeline" data-height="315" href="https://twitter.com/pimopimo?ref_src=twsrc%5Etfw">Tweets by pimopimo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                  </ぢ>
-                </li>
-              </ul>
-            </div>
-            <div class="l-footer__copyright">
-              <p class="u-center">© Travel & Blog</p>
-            </div>
+      <footer>
+        <div class="l-footer">
+          <div class="l-footer__copyright">
+            <p class="u-center">© COFFEE</p>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
