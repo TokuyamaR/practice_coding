@@ -2,6 +2,9 @@
   &--2col {
     &:nth-child(odd) {
       border-right: 1px solid black;
+      @include media {
+        border-right: unset;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 @import "./variables";
 
-@mixin fs($fontSize) {
-  font-size: #{$fontSize}px;
+@mixin fs($fontSize, $unit: "rem") {
+  font-size: #{$fontSize}#{$unit};
   font-weight: bold;
 }
 
@@ -11,13 +11,18 @@
   }
 }
 
-@mixin bgImage($imageName, $height: 300, $extension: "jpg") {
+@mixin bgImage($imageName, $extension: "jpg") {
   background-image: url("../images/#{$imageName}.#{$extension}");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: #{$height}px;
+  min-height: 19rem;
   position: relative;
+  @if $imageName != "mainvisual" {
+    @include media {
+      min-height: 6rem;
+    }
+  }
 }
 
 @mixin parallaxHeader() {
