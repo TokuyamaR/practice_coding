@@ -8,13 +8,10 @@
       @include parallaxHeader();
     }
     &--menu {
-      @include bgImage("menu");
     }
     &--about {
-      @include bgImage("about");
     }
     &--location {
-      @include bgImage("location");
     }
     &__title {
       color: white;
