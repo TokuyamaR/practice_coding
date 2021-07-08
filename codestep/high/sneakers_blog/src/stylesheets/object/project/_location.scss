@@ -1,0 +1,11 @@
+.p-location {
+  &__address {
+    margin-top: 1rem;
+    &__text {
+      margin-bottom: 1rem;
+      &:last-child {
+        margin-bottom: unset;
+      }
+    }
+  }
+}

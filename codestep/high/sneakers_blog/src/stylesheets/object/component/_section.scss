@@ -1,0 +1,32 @@
+@import "../../foundation/mixin";
+
+.c-section {
+  &__header {
+    &--menu,
+    &--about,
+    &--location {
+      @include parallaxHeader();
+    }
+    &--menu {
+      @include bgImage("menu");
+    }
+    &--about {
+      @include bgImage("about");
+    }
+    &--location {
+      @include bgImage("location");
+    }
+    &__title {
+      color: white;
+      font-size: 4.5rem;
+      font-weight: bold;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      @include media {
+        font-size: 2rem;
+      }
+    }
+  }
+}

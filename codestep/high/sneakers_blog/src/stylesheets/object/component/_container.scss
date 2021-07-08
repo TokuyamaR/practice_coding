@@ -1,0 +1,8 @@
+.c-container {
+  margin: 20px 0;
+  padding: 50px;
+  width: 100%;
+  @include media {
+    padding: 0 0 50px;
+  }
+}

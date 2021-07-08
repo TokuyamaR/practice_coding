@@ -1,0 +1,30 @@
+@import "./variables";
+
+@mixin fs($fontSize, $unit: "rem") {
+  font-size: #{$fontSize}#{$unit};
+  font-weight: bold;
+}
+
+@mixin media($mediaWidth: $spBreakpointWidth) {
+  @media only screen and (max-width: $mediaWidth) {
+    @content;
+  }
+}
+
+@mixin bgImage($imageName, $extension: "jpg") {
+  background-image: url("../images/#{$imageName}.#{$extension}");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 19rem;
+  position: relative;
+  @if $imageName != "mainvisual" {
+    @include media {
+      min-height: 6rem;
+    }
+  }
+}
+
+@mixin parallaxHeader() {
+  background-attachment: fixed;
+}

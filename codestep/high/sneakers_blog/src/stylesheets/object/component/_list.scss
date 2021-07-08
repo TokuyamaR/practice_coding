@@ -1,0 +1,28 @@
+.c-list {
+  &--2col {
+    display: flex;
+    flex-wrap: wrap;
+    &__list {
+      flex-basis: calc(100% / 2);
+      padding: 2%;
+      @include media {
+        flex-basis: 100%;
+      }
+    }
+  }
+  &--1col {
+    &__list {
+      margin-bottom: 32px;
+      &:last-child {
+        margin-top: unset;
+      }
+      &--left {
+        width: 87%;
+      }
+      &--right {
+        text-align: right;
+        width: 13%;
+      }
+    }
+  }
+}

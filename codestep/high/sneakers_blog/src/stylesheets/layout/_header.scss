@@ -1,0 +1,6 @@
+@import "../foundation/mixin";
+.l-header {
+  @include bgImage("mainvisual");
+  min-height: 100vh;
+  padding: 20px 30px;
+}

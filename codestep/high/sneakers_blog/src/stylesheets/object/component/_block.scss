@@ -1,0 +1,31 @@
+@import "../../foundation/_mixin";
+
+.c-block {
+  &_col {
+    padding: 0 3rem;
+    @include media {
+      padding: 0;
+    }
+    a {
+      display: inline-block;
+      text-align: center;
+    }
+    &__title {
+      @include fs(2.5);
+      margin-bottom: 4rem;
+      text-align: center;
+      @include media {
+        @include fs(1.25);
+        margin-bottom: 1.5rem;
+      }
+    }
+    &__content {
+      &--food {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  &_row {
+    display: flex;
+  }
+}
