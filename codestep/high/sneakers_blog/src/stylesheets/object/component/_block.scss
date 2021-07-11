@@ -20,8 +20,11 @@
       }
     }
     &__content {
-      &--food {
-        margin-bottom: 4rem;
+      &__text {
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: unset;
+        }
       }
     }
   }

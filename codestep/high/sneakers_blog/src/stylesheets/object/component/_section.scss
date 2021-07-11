@@ -2,28 +2,14 @@
 
 .c-section {
   &__header {
-    &--menu,
-    &--about,
-    &--location {
-      @include parallaxHeader();
-    }
-    &--menu {
-    }
-    &--about {
-    }
-    &--location {
-    }
+    text-align: center;
     &__title {
-      color: white;
-      font-size: 4.5rem;
-      font-weight: bold;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      @include media {
-        font-size: 2rem;
-      }
+      @include fs(2.25);
     }
+  }
+  &--contact {
+    background-color: #121212;
+    color: #fff;
+    margin: 0 calc(50% - 50vw);
   }
 }

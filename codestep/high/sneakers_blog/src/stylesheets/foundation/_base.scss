@@ -3,10 +3,8 @@ html {
 }
 
 body {
-  color: #333;
+  color: #121212;
   font-size: 0.9rem;
-  font-family: "Helvetica Neue", "Arial", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   line-height: 1.7;
 }
 
@@ -21,6 +19,12 @@ aside > section {
   margin-bottom: 40px;
 }
 
-img {
+img,
+video {
   max-width: 100%;
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid #707070;
 }

@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // clean-webpack-pluginモジュールの読み込み
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const Webpack = require("webpack");
 
 module.exports = {
   devtool: "source-map",
@@ -63,7 +64,7 @@ module.exports = {
       },
       {
         // image section
-        test: /\.(png|jpe?g|svg|ico)/,
+        test: /\.(png|jpe?g|svg|ico|mp4|gif|eot|woff|ttf)/,
         type: "asset/resource",
         generator: {
           filename: "images/[name]-[contenthash][ext]",
@@ -87,5 +88,8 @@ module.exports = {
     }),
     // 自動生成されるファイル以外の不要ファイルを削除(outputで指定したディレクトリ配下を対象とする)
     new CleanWebpackPlugin(),
+    new Webpack.ProvidePlugin({
+      $: "jquery",
+    }),
   ],
 };

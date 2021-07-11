@@ -10,6 +10,17 @@
       }
     }
   }
+  &--3col {
+    display: flex;
+    flex-wrap: wrap;
+    &__list {
+      flex-basis: calc(100% / 3);
+      padding: 1%;
+      @include media {
+        flex-basis: 100%;
+      }
+    }
+  }
   &--1col {
     &__list {
       margin-bottom: 32px;
