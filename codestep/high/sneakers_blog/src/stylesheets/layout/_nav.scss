@@ -1,7 +1,15 @@
 .l-nav {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  padding: 3.5rem 1.5rem;
+  transition: 0.5s;
+  background-color: $black;
+  z-index: 100;
+  /* Hide nav menu*/
+  left: -300px;
+  &.--show {
+    transform: translateX(100%);
+  }
 }

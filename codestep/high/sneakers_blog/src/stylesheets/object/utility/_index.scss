@@ -32,16 +32,8 @@
 
 // margin
 
-.u-mt16 {
-  margin-top: 1rem;
-}
-
-.u-mt32 {
-  margin-top: 2rem;
-}
-
-.u-mr16 {
-  margin-right: 1rem;
+.u-mt4 {
+  margin-top: 4rem;
 }
 
 // padding
@@ -53,4 +45,12 @@
 // display
 .u-ib {
   display: inline-block;
+}
+
+// color
+.u-bg {
+  &--black {
+    background-color: #000;
+    opacity: 0.8;
+  }
 }

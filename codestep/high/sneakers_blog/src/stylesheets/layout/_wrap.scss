@@ -11,9 +11,9 @@
   &__inner {
     max-width: $pcContentsWidth;
     margin: 0 auto;
-    padding: 5rem 1rem 10rem;
+    padding: 5rem 1rem 0;
     @include media {
-      padding: 1rem 1rem 4rem;
+      padding: 1rem 1rem 0;
     }
   }
 }

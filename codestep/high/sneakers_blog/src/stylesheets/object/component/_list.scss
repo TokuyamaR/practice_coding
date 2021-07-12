@@ -21,16 +21,9 @@
   }
   &--1col {
     &__list {
-      margin-bottom: 32px;
+      margin-bottom: 0.5rem;
       &:last-child {
         margin-top: unset;
-      }
-      &--left {
-        width: 87%;
-      }
-      &--right {
-        text-align: right;
-        width: 13%;
       }
     }
   }
