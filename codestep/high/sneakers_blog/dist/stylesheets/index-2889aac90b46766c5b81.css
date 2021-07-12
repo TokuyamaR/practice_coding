@@ -514,9 +514,12 @@ video {
   max-width: 100%;
 }
 
-input {
+input,
+textarea {
   background-color: #fff;
+  color: #121212;
   border: 1px solid #707070;
+  padding: 0.5rem;
 }
 
 .l-content {
@@ -530,6 +533,9 @@ input {
     margin: 0;
   }
 }
+.l-content_col {
+  flex-direction: column;
+}
 
 .l-footer {
   margin: 0 auto;
@@ -542,6 +548,8 @@ input {
   padding: 4rem 0;
 }
 .l-footer__copyright {
+  background-color: #121212;
+  color: #fff;
   padding: 1rem 0;
 }
 
@@ -557,6 +565,7 @@ input {
 .l-nav {
   color: #fff;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -614,9 +623,33 @@ input {
   display: flex;
 }
 
+.c-btn--hamburger {
+  display: block;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+}
+.c-btn--hamburger:hover {
+  cursor: pointer;
+}
+.c-btn--hamburger > span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 2rem;
+  background-color: #121212;
+}
+.c-btn--hamburger > span:first-child {
+  top: 0.375rem;
+}
+.c-btn--hamburger > span:nth-child(2) {
+  top: 1rem;
+}
+.c-btn--hamburger > span:nth-child(3) {
+  top: 1.625rem;
+}
+
 .c-container {
-  margin: 20px 0;
-  padding: 50px;
   width: 100%;
 }
 @media only screen and (max-width: 599px) {
@@ -626,19 +659,21 @@ input {
 }
 
 .c-form__list {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
-.c-form__list:last-child {
-  margin-bottom: unset;
-}
-.c-form--contact input {
+.c-form--contact input,
+.c-form--contact textarea {
   width: 100%;
 }
 .c-form--contact .c-form__btn {
   border: 1px solid #fff;
-  padding: 0.6rem;
+  padding: 0.8rem;
   text-align: center;
   width: 200px;
+}
+.c-form--contact .c-form__btn:hover {
+  background-color: #fff;
+  color: #121212;
 }
 
 .c-link--center {
@@ -659,17 +694,9 @@ input {
   }
 }
 .c-list--3col {
-  display: flex;
-  flex-wrap: wrap;
-}
-.c-list--3col__list {
-  flex-basis: calc(100% / 3);
-  padding: 1%;
-}
-@media only screen and (max-width: 599px) {
-  .c-list--3col__list {
-    flex-basis: 100%;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 .c-list--1col__list {
   margin-bottom: 32px;
@@ -711,17 +738,26 @@ input {
   margin-right: 20px;
 }
 
+.c-section {
+  padding: 6rem 0 3rem;
+}
 .c-section__header {
   text-align: center;
 }
 .c-section__header__title {
   font-size: 2.25rem;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 .c-section--contact {
+  padding-top: 3rem;
   background-color: #121212;
   color: #fff;
   margin: 0 calc(50% - 50vw);
+}
+
+.p-carousel__list {
+  padding: 0 2rem;
 }
 
 .p-location__address {

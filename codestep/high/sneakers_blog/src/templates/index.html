@@ -19,11 +19,16 @@
             <h1 class="l-logo">
               <img src="<%= require('../images/logo.svg') %>" alt="Sneakers" />
             </h1>
-            <ul class="c-nav">
-              <li class="c-nav__list"><a href="#menu">MENU</a></li>
-              <li class="c-nav__list"><a href="#about">ABOUT</a></li>
-              <li class="c-nav__list"><a href="#location">LOCATION</a></li>
-            </ul>
+            <div class="c-btn--hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- <ul class="c-nav">
+              <li class="c-nav__list"><a href="#pickup">PICK UP</a></li>
+              <li class="c-nav__list"><a href="#feature">FEATURE</a></li>
+              <li class="c-nav__list"><a href="#contact">CONTACT</a></li>
+            </ul> -->
           </div>
         </div>
       </header>
@@ -39,7 +44,7 @@
     </div>
     <div class="l-wrap">
       <div class="l-wrap__inner">
-        <div class="l-content">
+        <div class="l-content_col">
           <div class="l-main">
             <main>
               <section id="pickup" class="c-section">
@@ -47,22 +52,58 @@
                   <h2 class="c-section__header__title">PICK UP</h2>
                 </div>
                 <div class="c-container">
-                  <ul class="c-carousel">
-                    <li class="c-carousel__list">
+                  <ul class="p-carousel pickup-items">
+                    <li class="p-carousel__list">
                       <img
                         src="<%= require('../images/pickup1.jpg')%>"
                         alt="pickup"
                       />
                     </li>
-                    <li class="c-carousel__list">
+                    <li class="p-carousel__list">
                       <img
                         src="<%= require('../images/pickup2.jpg')%>"
                         alt="pickup"
                       />
                     </li>
-                    <li class="c-carousel__list">
+                    <li class="p-carousel__list">
                       <img
                         src="<%= require('../images/pickup3.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup4.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup5.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup6.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup7.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup8.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup9.jpg')%>"
                         alt="pickup"
                       />
                     </li>
@@ -176,11 +217,10 @@
                           <div class="c-form__list">
                             <label>
                               <p>Message:</p>
-                              <input
-                                type="textarea"
-                                col="3"
+                              <textarea
+                                cols="3"
                                 placeholder="新垣結衣モデルについてのお問い合わせとなります。"
-                              />
+                              ></textarea>
                             </label>
                           </div>
                           <div class="c-form__list">
@@ -194,17 +234,15 @@
               </section>
             </main>
           </div>
+          <footer>
+            <div class="l-footer">
+              <div class="l-footer__copyright u-wfull">
+                <p class="u-center">© COFFEE</p>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
-    </div>
-    <div class="l-wrap--footer">
-      <footer>
-        <div class="l-footer">
-          <div class="l-footer__copyright">
-            <p class="u-center">© COFFEE</p>
-          </div>
-        </div>
-      </footer>
     </div>
   </body>
 </html>

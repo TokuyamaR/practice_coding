@@ -1,19 +1,21 @@
 .c-form {
   &__list {
-    margin-bottom: 1rem;
-    &:last-child {
-      margin-bottom: unset;
-    }
+    margin-bottom: 1.25rem;
   }
   &--contact {
-    input {
+    input,
+    textarea {
       width: 100%;
     }
     .c-form__btn {
       border: 1px solid #fff;
-      padding: 0.6rem;
+      padding: 0.8rem;
       text-align: center;
       width: 200px;
+      &:hover {
+        background-color: #fff;
+        color: #121212;
+      }
     }
   }
 }

@@ -11,13 +11,11 @@
     }
   }
   &--3col {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     &__list {
-      flex-basis: calc(100% / 3);
-      padding: 1%;
       @include media {
-        flex-basis: 100%;
       }
     }
   }

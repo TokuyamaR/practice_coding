@@ -1,6 +1,32 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/javascripts/carousel/index.js":
+/*!*******************************************!*\
+  !*** ./src/javascripts/carousel/index.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel/slick/slick.scss */ "./node_modules/slick-carousel/slick/slick.scss");
+/* harmony import */ var slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.scss */ "./node_modules/slick-carousel/slick/slick-theme.scss");
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+
+
+$(".pickup-items").slick({
+  arrows: false,
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
+
+/***/ }),
+
 /***/ "./node_modules/jquery/dist/jquery.js":
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
@@ -10923,12 +10949,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************!*\
   !*** ./src/stylesheets/index.scss ***!
   \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Undefined variable.\n   ╷\n29 │   background-color: $whte;\n   │                     ^^^^^\n   ╵\n  src/stylesheets/foundation/_base.scss 29:21  @import\n  src/stylesheets/index.scss 7:9               root stylesheet\n    at processResult (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/webpack/lib/NormalModule.js:701:19)\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/webpack/lib/NormalModule.js:807:5\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass-loader/dist/index.js:54:7\n    at Function.call$2 (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:93650:16)\n    at _render_closure.call$0 (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:81991:23)\n    at Object.Primitives_applyFunction (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:1133:30)\n    at Object.Function_apply (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:5903:16)");
 
 /***/ }),
 
@@ -14029,17 +14052,12 @@ var __webpack_exports__ = {};
   \**********************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stylesheets_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../stylesheets/index.scss */ "./src/stylesheets/index.scss");
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel/slick/slick.scss */ "./node_modules/slick-carousel/slick/slick.scss");
-/* harmony import */ var slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.scss */ "./node_modules/slick-carousel/slick/slick-theme.scss");
+/* harmony import */ var _carousel_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./carousel/index.js */ "./src/javascripts/carousel/index.js");
  // css-loaderがないと読み込めない
-
-
 
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index-2c06ceb0952a8607c668.js.map
+//# sourceMappingURL=index-2c311b0d95a0332d5cac.js.map
