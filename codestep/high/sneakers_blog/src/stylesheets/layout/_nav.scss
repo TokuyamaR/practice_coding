@@ -6,7 +6,7 @@
   padding: 3.5rem 1.5rem;
   transition: 0.5s;
   background-color: $black;
-  z-index: 100;
+  z-index: 20;
   /* Hide nav menu*/
   left: -300px;
   &.--show {

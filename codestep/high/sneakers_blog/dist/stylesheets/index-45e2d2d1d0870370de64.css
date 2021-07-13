@@ -550,6 +550,7 @@ textarea {
 .l-footer__copyright {
   background-color: #121212;
   color: #fff;
+  font-size: 0.75rem;
   padding: 1rem 0;
 }
 
@@ -575,7 +576,7 @@ textarea {
   padding: 3.5rem 1.5rem;
   transition: 0.5s;
   background-color: #121212;
-  z-index: 100;
+  z-index: 20;
   /* Hide nav menu*/
   left: -300px;
 }
@@ -584,8 +585,10 @@ textarea {
 }
 
 .l-wrap--header {
-  background-color: #fff;
+  position: fixed;
   width: 100%;
+  background-color: #fff;
+  z-index: 10;
 }
 .l-wrap--mainvisual {
   width: 100%;
@@ -593,12 +596,7 @@ textarea {
 .l-wrap__inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5rem 1rem 0;
-}
-@media only screen and (max-width: 599px) {
-  .l-wrap__inner {
-    padding: 1rem 1rem 0;
-  }
+  padding: 0 1rem;
 }
 
 .c-block_col {
@@ -641,6 +639,7 @@ textarea {
   position: relative;
   height: 2rem;
   width: 2rem;
+  z-index: 20;
 }
 .c-btn--hamburger:hover {
   cursor: pointer;
@@ -664,12 +663,39 @@ textarea {
 }
 .c-btn--hamburger.--show > span:first-child {
   transform: translateY(0.625rem) rotate(315deg);
+  background-color: #fff;
 }
 .c-btn--hamburger.--show > span:nth-child(2) {
   opacity: 0;
 }
 .c-btn--hamburger.--show > span:nth-child(3) {
   transform: translateY(-0.625rem) rotate(-315deg);
+  background-color: #fff;
+}
+
+.c-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 8px 4px #ccc;
+  word-wrap: break-word;
+}
+.c-card__body {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 0.75rem;
+  padding: 1rem;
+}
+.c-card__body__text {
+  font-size: 0.9rem;
+}
+.c-card__body__date {
+  text-align: right;
+}
+.c-card__body p {
+  margin-bottom: 1.5rem;
+}
+.c-card__body p:last-child {
+  margin-bottom: unset;
 }
 
 .c-container {
@@ -719,7 +745,7 @@ textarea {
 .c-list--3col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .c-list--1col__list {
   margin-bottom: 0.5rem;
@@ -836,8 +862,15 @@ textarea {
 }
 
 .u-bg--black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background-color: #000;
   opacity: 0.8;
+  cursor: pointer;
+  z-index: 10;
 }
 /* Slider */
 .slick-slider {

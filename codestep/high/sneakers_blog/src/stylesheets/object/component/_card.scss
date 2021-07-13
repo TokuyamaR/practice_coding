@@ -1,0 +1,25 @@
+.c-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 8px 4px $borderGray;
+  word-wrap: break-word;
+  &__body {
+    background-color: $white;
+    border: 1px solid $borderGray;
+    font-size: 0.75rem;
+    padding: 1rem;
+    &__text {
+      font-size: 0.9rem;
+    }
+    &__date {
+      text-align: right;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      &:last-child {
+        margin-bottom: unset;
+      }
+    }
+  }
+}

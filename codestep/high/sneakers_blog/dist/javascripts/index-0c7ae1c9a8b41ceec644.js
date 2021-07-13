@@ -14063,15 +14063,26 @@ var hamburger = document.querySelector(".c-btn--hamburger");
 
 var slideNav = function slideNav() {
   document.querySelector(".l-nav").classList.toggle("--show");
-  document.querySelector("body").classList.toggle("u-bg--black");
+  document.getElementById("mask").classList.toggle("u-bg--black");
 };
 
 hamburger.addEventListener("click", function () {
   slideNav();
   this.classList.toggle("--show");
 });
+document.getElementById("mask").addEventListener("click", function () {
+  slideNav();
+  hamburger.classList.toggle("--show");
+});
+var linkList = document.querySelectorAll(".l-nav a");
+linkList.forEach(function (target) {
+  target.addEventListener("click", function () {
+    slideNav();
+    hamburger.classList.toggle("--show");
+  });
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index-93edd99426569ac5cffe.js.map
+//# sourceMappingURL=index-0c7ae1c9a8b41ceec644.js.map

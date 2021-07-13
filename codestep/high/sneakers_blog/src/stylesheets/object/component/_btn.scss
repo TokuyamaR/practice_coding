@@ -4,6 +4,7 @@
     position: relative;
     height: 2rem;
     width: 2rem;
+    z-index: 20;
     &:hover {
       cursor: pointer;
     }
@@ -28,12 +29,14 @@
       & > span {
         &:first-child {
           transform: translateY(0.625rem) rotate(315deg);
+          background-color: $white;
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:nth-child(3) {
           transform: translateY(-0.625rem) rotate(-315deg);
+          background-color: $white;
         }
       }
     }

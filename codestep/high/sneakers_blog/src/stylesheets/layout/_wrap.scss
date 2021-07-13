@@ -2,8 +2,10 @@
 
 .l-wrap {
   &--header {
-    background-color: #fff;
+    position: fixed;
     width: 100%;
+    background-color: #fff;
+    z-index: 10;
   }
   &--mainvisual {
     width: 100%;
@@ -11,9 +13,6 @@
   &__inner {
     max-width: $pcContentsWidth;
     margin: 0 auto;
-    padding: 5rem 1rem 0;
-    @include media {
-      padding: 1rem 1rem 0;
-    }
+    padding: 0 1rem;
   }
 }
