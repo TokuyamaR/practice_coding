@@ -22,7 +22,13 @@ $(".pickup-items").slick({
   centerMode: true,
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [{
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1
+    }
+  }]
 });
 
 /***/ }),
@@ -10949,9 +10955,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************!*\
   !*** ./src/stylesheets/index.scss ***!
   \************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Expected identifier.\n  ╷\n7 │     border: 1px solid $#ccc;\n  │                        ^\n  ╵\n  src/stylesheets/object/component/_card.scss 7:24  @import\n  src/stylesheets/index.scss 32:9                   root stylesheet\n    at processResult (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/webpack/lib/NormalModule.js:701:19)\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/webpack/lib/NormalModule.js:807:5\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass-loader/dist/index.js:54:7\n    at Function.call$2 (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:93650:16)\n    at _render_closure.call$0 (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:81991:23)\n    at Object.Primitives_applyFunction (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:1133:30)\n    at Object.Function_apply (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:5903:16)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -14060,15 +14069,26 @@ var hamburger = document.querySelector(".c-btn--hamburger");
 
 var slideNav = function slideNav() {
   document.querySelector(".l-nav").classList.toggle("--show");
-  document.querySelector("body").classList.toggle("u-bg--black");
+  document.getElementById("mask").classList.toggle("u-bg--black");
 };
 
 hamburger.addEventListener("click", function () {
   slideNav();
   this.classList.toggle("--show");
 });
+document.getElementById("mask").addEventListener("click", function () {
+  slideNav();
+  hamburger.classList.toggle("--show");
+});
+var linkList = document.querySelectorAll(".l-nav a");
+linkList.forEach(function (target) {
+  target.addEventListener("click", function () {
+    slideNav();
+    hamburger.classList.toggle("--show");
+  });
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index-3ef8acf8fe0456ff59b1.js.map
+//# sourceMappingURL=index-433c336bcb77ec01d481.js.map

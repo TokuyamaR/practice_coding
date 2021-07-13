@@ -4,9 +4,14 @@
     flex-wrap: wrap;
     &__list {
       flex-basis: calc(100% / 2);
-      padding: 2%;
       @include media {
         flex-basis: 100%;
+      }
+      &:nth-child(odd) {
+        padding-right: 2%;
+        @include media {
+          padding: unset;
+        }
       }
     }
   }
@@ -14,9 +19,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    &__list {
-      @include media {
-      }
+    @include media {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   &--1col {

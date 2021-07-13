@@ -2,6 +2,9 @@
 
 .c-section {
   padding: 6rem 0 3rem;
+  @include media {
+    padding: 3rem 0;
+  }
   &__header {
     text-align: center;
     &__title {
@@ -10,7 +13,7 @@
     }
   }
   &--contact {
-    padding-top: 3rem;
+    padding: 3rem 1rem 0;
     background-color: $black;
     color: $white;
     margin: 0 calc(50% - 50vw);

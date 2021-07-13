@@ -519,7 +519,7 @@ textarea {
   background-color: #fff;
   color: #121212;
   border: 1px solid #707070;
-  padding: 0.5rem;
+  padding: 0.6rem;
 }
 
 .l-content {
@@ -701,11 +701,6 @@ textarea {
 .c-container {
   width: 100%;
 }
-@media only screen and (max-width: 599px) {
-  .c-container {
-    padding: 0 0 50px;
-  }
-}
 
 .c-form__list {
   margin-bottom: 1.25rem;
@@ -715,10 +710,17 @@ textarea {
   width: 100%;
 }
 .c-form--contact .c-form__btn {
+  background-color: #121212;
   border: 1px solid #fff;
+  color: #fff;
   padding: 0.8rem;
   text-align: center;
   width: 200px;
+}
+@media only screen and (max-width: 599px) {
+  .c-form--contact .c-form__btn {
+    width: 100%;
+  }
 }
 .c-form--contact .c-form__btn:hover {
   background-color: #fff;
@@ -735,17 +737,29 @@ textarea {
 }
 .c-list--2col__list {
   flex-basis: calc(100% / 2);
-  padding: 2%;
 }
 @media only screen and (max-width: 599px) {
   .c-list--2col__list {
     flex-basis: 100%;
   }
 }
+.c-list--2col__list:nth-child(odd) {
+  padding-right: 2%;
+}
+@media only screen and (max-width: 599px) {
+  .c-list--2col__list:nth-child(odd) {
+    padding: unset;
+  }
+}
 .c-list--3col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+@media only screen and (max-width: 599px) {
+  .c-list--3col {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .c-list--1col__list {
   margin-bottom: 0.5rem;
@@ -788,6 +802,11 @@ textarea {
 .c-section {
   padding: 6rem 0 3rem;
 }
+@media only screen and (max-width: 599px) {
+  .c-section {
+    padding: 3rem 0;
+  }
+}
 .c-section__header {
   text-align: center;
 }
@@ -797,7 +816,7 @@ textarea {
   margin-bottom: 2rem;
 }
 .c-section--contact {
-  padding-top: 3rem;
+  padding: 3rem 1rem 0;
   background-color: #121212;
   color: #fff;
   margin: 0 calc(50% - 50vw);
@@ -805,6 +824,11 @@ textarea {
 
 .p-carousel__list {
   padding: 0 2rem;
+}
+@media only screen and (max-width: 599px) {
+  .p-carousel__list {
+    padding: 0 1rem;
+  }
 }
 
 .p-location__address {

@@ -22,7 +22,13 @@ $(".pickup-items").slick({
   centerMode: true,
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [{
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1
+    }
+  }]
 });
 
 /***/ }),
@@ -10949,12 +10955,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************!*\
   !*** ./src/stylesheets/index.scss ***!
   \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: expected \";\".\n   ╷\n17 │     background-color: $black;\n   │                     ^\n   ╵\n  src/stylesheets/object/component/_section.scss 17:21  @import\n  src/stylesheets/index.scss 39:9                       root stylesheet\n    at processResult (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/webpack/lib/NormalModule.js:701:19)\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/webpack/lib/NormalModule.js:807:5\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:399:11\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:251:18\n    at context.callback (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at /Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass-loader/dist/index.js:54:7\n    at Function.call$2 (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:93650:16)\n    at _render_closure.call$0 (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:81991:23)\n    at Object.Primitives_applyFunction (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:1133:30)\n    at Object.Function_apply (/Users/raido/Desktop/develop/code_practice/practice_coding/codestep/high/sneakers_blog/node_modules/sass/sass.dart.js:5903:16)");
 
 /***/ }),
 
@@ -14085,4 +14088,4 @@ linkList.forEach(function (target) {
 
 /******/ })()
 ;
-//# sourceMappingURL=index-0c7ae1c9a8b41ceec644.js.map
+//# sourceMappingURL=index-ebd061f84f324085af6e.js.map

@@ -10,7 +10,7 @@
       href="/dist/images/favicon-7e5305a0f2187da336e0.ico"
     />
     <title>Sneakers</title>
-  <script defer src="./javascripts/index-0c7ae1c9a8b41ceec644.js"></script><link href="././stylesheets/index-45e2d2d1d0870370de64.css" rel="stylesheet"></head>
+  <script defer src="./javascripts/index-433c336bcb77ec01d481.js"></script><link href="././stylesheets/index-fb28bcd0810c6e398837.css" rel="stylesheet"></head>
   <body>
     <div class="l-wrap--header">
       <header>
@@ -276,11 +276,15 @@
                     </li>
                     <li class="c-list--2col__list">
                       <div class="c-block_col__content">
-                        <form action="post" class="c-form--contact">
+                        <form action="#" method="get" class="c-form--contact">
                           <div class="c-form__list">
                             <label>
                               <p>Name:</p>
-                              <input type="text" placeholder="新垣 結衣" />
+                              <input
+                                type="text"
+                                name="name"
+                                placeholder="新垣 結衣"
+                              />
                             </label>
                           </div>
                           <div class="c-form__list">
@@ -288,7 +292,8 @@
                               <p>Mail:</p>
                               <input
                                 type="text"
-                                placeholder="aragaki_yui@gmail.com"
+                                name="mail"
+                                placeholder="aragaki_yui@sneakers.com"
                               />
                             </label>
                           </div>
@@ -297,12 +302,17 @@
                               <p>Message:</p>
                               <textarea
                                 cols="3"
+                                name="message"
                                 placeholder="新垣結衣モデルについてのお問い合わせとなります。"
                               ></textarea>
                             </label>
                           </div>
                           <div class="c-form__list">
-                            <button class="c-form__btn">SEND</button>
+                            <input
+                              type="submit"
+                              value="SEND"
+                              class="c-form__btn"
+                            />
                           </div>
                         </form>
                       </div>
