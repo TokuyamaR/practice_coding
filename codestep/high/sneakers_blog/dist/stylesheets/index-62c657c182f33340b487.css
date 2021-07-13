@@ -580,6 +580,12 @@ textarea {
   /* Hide nav menu*/
   left: -300px;
 }
+@media only screen and (max-width: 599px) {
+  .l-nav {
+    left: -70%;
+    width: 70%;
+  }
+}
 .l-nav.--show {
   transform: translateX(100%);
 }
