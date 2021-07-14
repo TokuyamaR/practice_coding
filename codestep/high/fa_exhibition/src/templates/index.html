@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="<%= require('../images/favicon.ico') %>"
+    />
+    <title>Sneakers</title>
+  </head>
+  <body>
+    <div class="l-wrap--header">
+      <header>
+        <div class="l-header">
+          <h1 class="l-logo">
+            <img src="<%= require('../images/logo.svg') %>" alt="Sneakers" />
+          </h1>
+          <div class="c-btn--hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="l-nav">
+            <ul class="c-nav_col">
+              <li class="c-nav_col__list"><a href="#pickup">PICK UP</a></li>
+              <li class="c-nav_col__list"><a href="#feature">FEATURE</a></li>
+              <li class="c-nav_col__list"><a href="#contact">CONTACT</a></li>
+            </ul>
+            <ul class="c-list--1col u-mt4">
+              <li class="c-list--1col__list"><a href="#">Twitter</a></li>
+              <li class="c-list--1col__list"><a href="#">Facebook</a></li>
+              <li class="c-list--1col__list"><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div id="mask"></div>
+    </div>
+    <div class="l-wrap--mainvisual">
+      <video
+        src="<%= require('../images/video.mp4') %>"
+        autoplay
+        loop
+        muted
+        alt="Sneakers"
+      ></video>
+    </div>
+    <div class="l-wrap">
+      <div class="l-wrap__inner">
+        <div class="l-content_col">
+          <div class="l-main">
+            <main>
+              <section id="pickup" class="c-section">
+                <div class="c-section__header">
+                  <h2 class="c-section__header__title">PICK UP</h2>
+                </div>
+                <div class="c-container">
+                  <ul class="p-carousel pickup-items">
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup1.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup2.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup3.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup4.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup5.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup6.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup7.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup8.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                    <li class="p-carousel__list">
+                      <img
+                        src="<%= require('../images/pickup9.jpg')%>"
+                        alt="pickup"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section id="feature" class="c-section">
+                <div class="c-section__header">
+                  <h2 class="c-section__header__title">FEATURE</h2>
+                </div>
+                <div class="c-container">
+                  <ul class="c-list--3col">
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature1.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature2.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature3.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature4.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature5.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature6.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature7.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature8.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                    <li class="c-list--3col__list c-card">
+                      <img
+                        src="<%= require('../images/feature9.jpg')%>"
+                        alt="feature"
+                      />
+                      <div class="c-card__body">
+                        <p>Category</p>
+                        <p class="c-card__body__text">
+                          テキストテキストテキストテキストテキストテキ
+                          ストテキストテキスト
+                        </p>
+                        <p class="c-card__body__date">XXXX.XX.XX</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section id="contact" class="c-section--contact">
+                <div class="c-section__header">
+                  <h2 class="c-section__header__title">CONTACT</h2>
+                </div>
+                <div class="c-container">
+                  <ul class="c-list--2col">
+                    <li class="c-list--2col__list">
+                      <div class="c-block_col__content">
+                        <p class="c-block_col__content__text">
+                          テキストテキストテキスト
+                        </p>
+                        <p class="c-block_col__content__text">
+                          テキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+                          キストテキストテキストテキストテキストテキストテキストテキストテキストテキ
+                          ストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <p class="c-block_col__content__text">
+                          テキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+                          キストテキストテキストテキストテキストテキストテキストテキストテキストテキ
+                          ストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                      </div>
+                    </li>
+                    <li class="c-list--2col__list">
+                      <div class="c-block_col__content">
+                        <form action="#" method="get" class="c-form--contact">
+                          <div class="c-form__list">
+                            <label>
+                              <p>Name:</p>
+                              <input
+                                type="text"
+                                name="name"
+                                placeholder="新垣 結衣"
+                              />
+                            </label>
+                          </div>
+                          <div class="c-form__list">
+                            <label>
+                              <p>Mail:</p>
+                              <input
+                                type="text"
+                                name="mail"
+                                placeholder="aragaki_yui@sneakers.com"
+                              />
+                            </label>
+                          </div>
+                          <div class="c-form__list">
+                            <label>
+                              <p>Message:</p>
+                              <textarea
+                                cols="3"
+                                name="message"
+                                placeholder="新垣結衣モデルについてのお問い合わせとなります。"
+                              ></textarea>
+                            </label>
+                          </div>
+                          <div class="c-form__list">
+                            <input
+                              type="submit"
+                              value="SEND"
+                              class="c-form__btn"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </main>
+          </div>
+          <footer>
+            <div class="l-footer">
+              <div class="l-footer__copyright u-wfull">
+                <p class="u-center">© Sneakers</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

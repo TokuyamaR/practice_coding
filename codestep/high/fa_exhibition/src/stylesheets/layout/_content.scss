@@ -1,0 +1,14 @@
+@import "../foundation/variables";
+
+.l-content {
+  display: flex;
+  margin: 4rem 0;
+  max-width: $pcContentsWidth;
+  @include media {
+    flex-direction: column;
+    margin: 0;
+  }
+  &_col {
+    flex-direction: column;
+  }
+}

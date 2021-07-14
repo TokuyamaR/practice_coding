@@ -1,0 +1,16 @@
+.l-footer {
+  margin: 0 auto;
+  &_nav_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 4rem 0;
+  }
+  &__copyright {
+    background-color: $black;
+    color: $white;
+    font-size: 0.75rem;
+    padding: 1rem 0;
+  }
+}

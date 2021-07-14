@@ -1,0 +1,26 @@
+.c-form {
+  &__list {
+    margin-bottom: 1.25rem;
+  }
+  &--contact {
+    input,
+    textarea {
+      width: 100%;
+    }
+    .c-form__btn {
+      background-color: $black;
+      border: 1px solid $white;
+      color: $white;
+      padding: 0.8rem;
+      text-align: center;
+      width: 200px;
+      @include media {
+        width: 100%;
+      }
+      &:hover {
+        background-color: $white;
+        color: #121212;
+      }
+    }
+  }
+}

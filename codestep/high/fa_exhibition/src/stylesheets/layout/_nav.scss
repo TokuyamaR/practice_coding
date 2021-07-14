@@ -1,0 +1,20 @@
+.l-nav {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  padding: 3.5rem 1.5rem;
+  transition: 0.5s;
+  background-color: $black;
+  z-index: 20;
+  /* Hide nav menu*/
+  left: -300px;
+
+  @include media {
+    left: -70%;
+    width: 70%;
+  }
+  &.--show {
+    transform: translateX(100%);
+  }
+}

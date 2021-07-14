@@ -1,0 +1,63 @@
+// width
+.u-w100 {
+  width: 100%;
+}
+
+.u-wfull {
+  margin: 0 calc(50% - 50vw);
+}
+
+// position
+.u-center {
+  text-align: center;
+}
+
+// link
+.u-link {
+  &__underline {
+    text-decoration: underline;
+  }
+}
+
+// border
+
+.u-bb {
+  &--dotted {
+    border-bottom: 1px black dotted;
+  }
+  &--red {
+    border-bottom: 6px #e03131 solid;
+  }
+}
+
+// margin
+
+.u-mt4 {
+  margin-top: 4rem;
+}
+
+// padding
+
+.u-p0 {
+  padding: 0;
+}
+
+// display
+.u-ib {
+  display: inline-block;
+}
+
+// color
+.u-bg {
+  &--black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 10;
+  }
+}

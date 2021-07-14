@@ -1,0 +1,34 @@
+.c-list {
+  &--2col {
+    display: flex;
+    flex-wrap: wrap;
+    &__list {
+      flex-basis: calc(100% / 2);
+      @include media {
+        flex-basis: 100%;
+      }
+      &:nth-child(odd) {
+        padding-right: 2%;
+        @include media {
+          padding: unset;
+        }
+      }
+    }
+  }
+  &--3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    @include media {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &--1col {
+    &__list {
+      margin-bottom: 0.5rem;
+      &:last-child {
+        margin-top: unset;
+      }
+    }
+  }
+}
