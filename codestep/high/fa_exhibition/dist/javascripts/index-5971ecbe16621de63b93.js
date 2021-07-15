@@ -11149,8 +11149,30 @@ __webpack_require__.r(__webpack_exports__);
  // css-loaderがないと読み込めない
 
 
+var hamburger = document.querySelector(".c-btn--hamburger");
+
+var slideNav = function slideNav() {
+  document.querySelector(".l-nav").classList.toggle("--show");
+  document.getElementById("mask").classList.toggle("u-bg--black");
+};
+
+hamburger.addEventListener("click", function () {
+  slideNav();
+  this.classList.toggle("--show");
+});
+document.getElementById("mask").addEventListener("click", function () {
+  slideNav();
+  hamburger.classList.toggle("--show");
+});
+var linkList = document.querySelectorAll(".l-nav a");
+linkList.forEach(function (target) {
+  target.addEventListener("click", function () {
+    slideNav();
+    hamburger.classList.toggle("--show");
+  });
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index-1ebaeb40de65eeb9f7f0.js.map
+//# sourceMappingURL=index-5971ecbe16621de63b93.js.map
