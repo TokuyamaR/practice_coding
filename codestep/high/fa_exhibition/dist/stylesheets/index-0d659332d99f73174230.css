@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap);
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
@@ -494,6 +495,7 @@ html {
 
 body {
   color: #121212;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.9rem;
   line-height: 1.7;
 }
